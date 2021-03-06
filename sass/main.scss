@@ -1,13 +1,10 @@
-@import "./utils/variables";
-@import "./components/modal-button";
-@import "./components/section-slogan";
-@import "./components/subscribe-btn";
-@import "./components/page-footer";
-//LAYOUT//
-@import "./layout/header";
-@import "./layout/hero" ; 
-@import "./layout/what-are-we-doing";
-@import "./layout/our-team-section" ;
-@import "./layout/regular-customers";
-@import "./layout/footer";
-@import "./layout/backdrop" ;
+@import "./utils/main";
+
+//Base
+@import "./base/base";
+
+// Components
+@import "./components/main";
+
+//layout
+@import "./layout/main";
