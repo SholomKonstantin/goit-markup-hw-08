@@ -1,129 +1,90 @@
- 
-   
-    
-    .footer-container{ 
-        display: flex; align-items: baseline;
-    }
-    
-    .location {
-        margin-top: 20px;
-        margin-bottom: 9px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        color: var(--sec-background-color);
-    }
-    
-    .studio-footer {
-        color: var(--main-background-color);
-    }
-    
-    .contacts-tel,
-    .contacts-email {
-        display: inline-block;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14;
-        text-decoration: none;
-    
-        color: var(--secondary-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .footer-email {
-        margin-bottom: 9px;
-    }
-    
-    .footer-contacts {
-        list-style: none;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-    
-    }
-    
-    .first-column {
-        margin-right: 70px;
-    }
-    .third-column {
-        margin-left: auto;
-       
-    }
-    
-    .input-foot-container{display: flex;}
-    
-    .subscribe {
-        margin-top: 0;
-        margin-bottom: 20px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--main-background-color);
-    }
-    
-    .footer-social-item:not(:last-child) {    
-        margin-right: 10px;
-    }
-    
-    .footer-icon-link {
+.footer-container {
+    @media (min-width: $desktop-width) {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        
-        color: var(--main-background-color);
-        fill: currentColor;
-        background-color: rgba(255, 255, 255, 0.1);
-        
-        border-radius: 50%;
-    
-        transition-property:  background-color;
-        transition: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
 
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-        }
+.footer-unifying {    
+    margin-bottom: 60px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
     }
-    
-    .footer-social-icon {
-        width: 20px;
-        height: 20px;
-        
+}
+
+@media (max-width: $sec-desktop-width) {
+    .footer-container {
+        text-align: center;
     }
-       
-    .footer-input {
-        width: 358px;
-        height: 50px;    
-        padding-left: 16px;
-        outline: transparent;
-        color: var(--main-background-color);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-sizing: border-box;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        &:focus {
-            border-color: var(--accent-color);
-         }
-        &::placeholder {
-            font-size: 16px;
-            line-height: 1.25;
-        
-            display: flex;
-            align-items: center;
-        
-            color: rgba(255, 255, 255, 0.6);
-        }
+}
+
+.first-container {
+    @media (max-width: $tablet-width) {
+        margin-bottom: 60px;
     }
-   
-    
+}
+
+.second-container {
+    @media (min-width: $desktop-width) {
+        margin-left: 70px;
+    }
+}
+
+.page-footer {
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $dark-background-color;
+}
+
+.location,
+.studio-footer {
+    color: $light-text-color;
+}
+
+.logo-title-footer {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    font-family: $secondary-font-family;
+    color: $accent-color;
+
+    margin-bottom: 20px;
+}
+
+.location {
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.contacts-tel,
+.contacts-email {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+
+    color: $sec-text-color;
+
+    transition: color 250ms $main-timing-function;
+
+
+    &:hover, :focus {
+        color: $accent-color;
+        cursor: pointer;
+    }
+}
+
+.footer-email {
+    margin-bottom: 8px;
+}
