@@ -1025,10 +1025,6 @@ section {
   }
 }
 
-.footer-unifying {
-  margin-bottom: 60px;
-}
-
 @media (min-width: 768px) {
   .footer-unifying {
     display: flex;
