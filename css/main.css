@@ -73,7 +73,6 @@ section {
 
 .menu-button.is-open {
   position: fixed;
-  z-index: 2;
 }
 
 .menu-button:hover, .menu-button:focus {
