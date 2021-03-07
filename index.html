@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
 </head>
@@ -24,20 +24,20 @@
 
             <div class="menu-container" data-menu>
                 <ul class="navigation-links list">
-                    <li class="site-nav"><a class="current" href="./index.html">Studio</a></li>
-                    <li class="site-nav"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="site-nav"><a class="nav-link" href="">Contacts</a></li>
+                    <li class="site-nav"><a class="current" href="./index.html">Студия</a></li>
+                    <li class="site-nav"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav"><a class="nav-link" href="">Контакты</a></li>
                 </ul>
 
                 <ul class="navigation-contacts list">
                     <li class="nav-email"><a class="contacts" href="mailto:info@devstudio.com">
                             <svg class="icon-envelope">
-                                <use href='./images/symbol-defs.svg#icon-envelope'></use>
+                                <use href='./img/sprite.svg#icon-envelope'></use>
                             </svg>info@devstudio.com</a>
                     </li>
                     <li class="nav-tel"><a class="contacts" href="tel:+380961111111">
                             <svg class="icon-smartphone">
-                                <use href='./images/symbol-defs.svg#icon-smartphone'></use>
+                                <use href='./img/sprite.svg#icon-smartphone'></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
@@ -67,9 +67,9 @@
                 </div>
             </div>
             <button type="button" class="menu-button" data-menu-button>
-                <svg class="menu-button__icon" >
-                    <use class="icon-menu" href='./images/sprite.svg#burger-icon'></use>
-                    <use class="icon-cross" href='./images/symbol-defs.svg#close-icon'></use>
+                <svg class="menu-button__icon" width='40px' height='40px' >
+                    <use class="icon-menu" href='./img/sprite.svg#burger-icon'></use>
+                    <use class="icon-cross" href='./img/sprite.svg#close-icon'></use>
                 </svg>
             </button>
 
@@ -140,7 +140,9 @@
                         <ul class="images list">
                             <li>
                                 <div class="product">
-                                    <img  src="./img/laptop.jpg" alt="coding1">
+                                    <div class="product">
+                                        <img srcset="./img/coding-pic@2x.jpg 2x" src="./images/coding-pic.jpg"
+                                            alt="coding-picture-1">
                                     <div class="image-overlay">
                                         <h3 class="image-title">ДОСТУПНЫЕ ПРИЛОЖЕНИЯ</h3>
                                     </div>
@@ -148,7 +150,8 @@
                             </li>
                             <li>
                                 <div class="product">
-                                    <img class="coding-photo "  src="./img/iphone.jpg" alt="coding2">
+                                    <img srcset="./img/phone-pic@2x.jpg 2x" src="./images/phone-pic.jpg"
+                                alt="coding-picture-2">
                                     <div class="image-overlay">
                                         <h3 class="image-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                                     </div>
@@ -157,7 +160,8 @@
                             
                             <li>
                                 <div class="product">
-                                    <img  src="./img/pixels.jpg" alt="coding3">
+                                    <img srcset="./img/tablet-pic@2x.jpg 2x" src="./images/tablet-pic.jpg"
+                                    alt="coding-picture-3">
                                     <div class="image-overlay">
                                         <h3 class="image-title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                                     </div>
@@ -174,7 +178,8 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-person">
-                        <img src="./img//igor.jpg" alt="photo of igor" width="270">
+                        <img class="team-photo" srcset="./img/igor@2x.jpg 2x" src="./img/igor.jpg"
+                            alt="photo of igor">
                         <div class="descr-container">
                             <h3 class="names">Игорь Демьяненько</h3>
                             <p class="profession">Product Designer</p>
@@ -211,7 +216,8 @@
                         </div>
                     </li>
                     <li class="team-person">
-                        <img src="./img//olga.jpg" alt="photo of olga" width="270">
+                        <img class="team-photo" srcset="./img/olga@2x.jpg 2x" src="./img/olga.jpg"
+                        alt="photo of olga">
                         <div class="descr-container">
                             <h3 class="names">Ольга Репина</h3>
                             <p class="profession">Frontend Developer</p>
@@ -248,7 +254,8 @@
                         </div>
                     </li>
                     <li class="team-person">
-                        <img src="./img/nikolay.jpg" alt="photo of nikolay" width="270">
+                        <img class="team-photo" srcset="./img/nikolai@2x.jpg 2x" src="./img/nikolai.jpg"
+                            alt="photo of nikolai">
                         <div class="descr-container">
                             <h3 class="names">Николай Тарасов</h3>
                             <p class="profession">Marketing</p>
@@ -285,7 +292,8 @@
                         </div>
                     </li>
                     <li class="team-person">
-                        <img src="./img//mihail.jpg" alt="photo of mihail" width="270">
+                        <img class="team-photo" srcset="./img/michail@2x.jpg 2x" src="./img/michail.jpg"
+                        alt="photo of michail">
                         <div class="descr-container">
                             <h3 class="names">Михаил Ермаков</h3>
                             <p class="profession">UI Designer</p>
@@ -331,42 +339,42 @@
         <ul class="logo-list list">
             <li class="logo">
                 <a class="logo-link" href="#">
-                    <svg class="logo-icon">
+                    <svg class="logo-icon" width='45px' height='49px'>
                         <use href="./img/sprite.svg#icon-logo"  ></use>
                     </svg>
                 </a>
             </li>
             <li class="logo">
                 <a class="logo-link" href="#">
-                    <svg class="logo-icon">
+                    <svg class="logo-icon" width='45px' height='49px'>
                         <use href="./img/sprite.svg#icon-logo-2"></use>
                     </svg>
                 </a>
             </li>
             <li class="logo">
                 <a class="logo-link" href="#">
-                    <svg class="logo-icon">
+                    <svg class="logo-icon" width='45px' height='49px'>
                         <use href="./img/sprite.svg#icon-logo-3"></use>
                     </svg>
                 </a>
             </li>
             <li class="logo">
                 <a class="logo-link" href="#">
-                    <svg class="logo-icon" >
+                    <svg class="logo-icon" width='80px' height='42px'>
                         <use href="./img/sprite.svg#icon-logo-4-1" ></use>
                     </svg>
                 </a>
             </li>
             <li class="logo">
                 <a class="logo-link" href="#">
-                    <svg class="logo-icon">
+                    <svg class="logo-icon" width='45px' height='49px'>
                         <use href="./img/symbol-defs.svg#icon-logo-5-2"  ></use>
                     </svg>
                 </a>
             </li>
             <li class="logo">
                 <a class="logo-link" href="#">
-                    <svg class="logo-icon" >
+                    <svg class="logo-icon" width='88px' height='45px'>
                         <use href="./img/sprite.svg#icon-logo-6-1" ></use>
                     </svg>
                 </a>
@@ -401,28 +409,28 @@
                         <li class="footer-social-item">
                             <a class="footer-icon-link" href="#">
                                 <svg class="footer-social-icon">
-                                    <use href='./images/sprite.svg#icon-instagram'></use>
+                                    <use href='./img/sprite.svg#icon-instagram'></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-social-item">
                             <a class="footer-icon-link" href="#">
                                 <svg class="footer-social-icon">
-                                    <use href='./images/sprite.svg#icon-twitter'></use>
+                                    <use href='./img/sprite.svg#icon-twitter'></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-social-item">
                             <a class="footer-icon-link" href="#">
                                 <svg class="footer-social-icon">
-                                    <use href='./images/sprite.svg#icon-facebook'></use>
+                                    <use href='./img/sprite.svg#icon-facebook'></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-social-item">
                             <a class="footer-icon-link" href="#">
                                 <svg class="footer-social-icon">
-                                    <use href='./images/sprite.svg#icon-linkedin'></use>
+                                    <use href='./img/sprite.svg#icon-linkedin'></use>
                                 </svg>
                             </a>
                         </li>
@@ -438,7 +446,7 @@
                     </label>
                     <button type="submit" class="subscribe-btn">Подпишитесь
                         <svg class="icon-send" width='24' height='24'>
-                            <use href='./images/sprite.svg#icon-icon-send'></use>
+                            <use href='./img/sprite.svg#icon-icon-send'></use>
                         </svg>
                     </button>
                 </div>

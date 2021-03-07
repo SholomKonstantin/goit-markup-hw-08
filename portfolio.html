@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
 </head>
@@ -23,9 +23,9 @@
 
             <div class="menu-container" data-menu>
                 <ul class="navigation-links list">
-                    <li class="site-nav"><a class="nav-link" href="./index.html">Studio</a></li>
-                    <li class="site-nav"><a class="current" href="./portfolio.html">Portfolio</a></li>
-                    <li class="site-nav"><a class="nav-link" href="">Contacts</a></li>
+                    <li class="site-nav"><a class="current" href="./index.html">Студия</a></li>
+                    <li class="site-nav"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav"><a class="nav-link" href="">Контакты</a></li>
                 </ul>
 
                 <ul class="navigation-contacts list">
@@ -51,24 +51,24 @@
                     </ul>
                     <ul class="social-mob-list list">
                         <li class="social-mob-item">
-                            <a class="social-mob-link" href="">Instagram</a>
+                            <a class="social-mob-link" href="#">Instagram</a>
                         </li>
                         <li class="social-mob-item">
-                            <a class="social-mob-link" href="">Twitter</a>
+                            <a class="social-mob-link" href="#">Twitter</a>
                         </li>
                         <li class="social-mob-item">
-                            <a class="social-mob-link" href="">Facebook</a>
+                            <a class="social-mob-link" href="#">Facebook</a>
                         </li>
                         <li class="social-mob-item">
-                            <a class="social-mob-link" href="">LinkedIn</a>
+                            <a class="social-mob-link" href="#">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <button type="button" class="menu-button" data-menu-button>
-                <svg class="menu-button__icon" width='40px' height='40px'>
-                    <use class="icon-menu" href='./images/symbol-defs.svg#burger-icon'></use>
-                    <use class="icon-cross" href='./images/symbol-defs.svg#close-icon'></use>
+                <svg class="menu-button__icon" >
+                    <use class="icon-menu" href='./img/sprite.svg#burger-icon'></use>
+                    <use class="icon-cross" href='./img/symbol-defs.svg#close-icon'></use>
                 </svg>
             </button>
 
@@ -104,7 +104,8 @@
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/macbook.jpg" alt="image of technocrack" width="368">
+                        <img class="portfolio-images" srcset="./img/technocrack@2x.jpg 2x"
+                                    src="./img/technocrack.jpg" alt="image of technocrack">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -121,7 +122,8 @@
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/poster.jpg" alt="image of poster-new-orleans" width="366">
+                        <img class="portfolio-images" srcset="./img/poster-new-orleans@2x.jpg 2x"
+                        src="./img/poster-new-orleans.jpg" alt="image of basketball">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -138,7 +140,8 @@
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/restaurant.jpg" alt="image of restaurant-seafood" width="368">
+                        <img class="portfolio-images" srcset="./img/restaurant-seafood@2x.jpg 2x"
+                        src="./img/restaurant-seafood.jpg" alt="image of restaurant-seafood">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -155,7 +158,8 @@
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/headphones.jpg" alt="image of project prime" width="368">
+                        <img class="portfolio-images" srcset="./img/project-prime@2x.jpg 2x"
+                        src="./img/project-prime.jpg" alt="image of project prime">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -172,7 +176,8 @@
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/boxes.jpg" alt="image of project boxes" width="368">
+                        <img class="portfolio-images" srcset="./img/project-boxes@2x.jpg 2x"
+                                    src="./img/project-boxes.jpg" alt="image of project boxes">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -189,13 +194,13 @@
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/worldmap.jpg"
-                        alt="image of web-site inspiration-has-no-borders" width="368">
+                        <img class="portfolio-images" srcset="./img/inspiration-has-no-borders@2x.jpg 2x"
+                            src="./img/inspiration-has-no-borders.jpg"
+                            alt="image of wbe-site inspiration-has-no-borders">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
-                                на защищённые сервера конкурентов.
-                            </p>
+                                на защищённые сервера конкурентов. </p>
                         </div>
                     </div>
                     <div class="project-name-container">
@@ -203,12 +208,12 @@
                         <p class="project-technology">Веб-сайт</p>
                     </div>
                 </a>
-            </li> 
+            </li>
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/book.jpg" alt="image of pulication limited edition"
-            width="368">
+                        <img class="portfolio-images" srcset="./img/pub-limited-edition@2x.jpg 2x"
+                        src="./img/pub-limited-edition.jpg" alt="image of pulication limited edition">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -225,7 +230,8 @@
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/trinket.jpg" alt="image of project lab" width="368">
+                        <img class="portfolio-images" srcset="./img/project-lab@2x.jpg 2x"
+                                    src="./img/project-lab.jpg" alt="image of project lab">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -242,7 +248,8 @@
             <li class="projects-item">
                 <a class="project-content" href="#">
                     <div class="description">
-                        <img src="./img/laptop2.jpg" alt="image of growing business" width="368">
+                        <img class="portfolio-images" srcset="./img/growing-business@2x.jpg 2x"
+                        src="./img/growing-business.jpg" alt="image of growing business">
                         <div class="project-overlay">
                             <p class="tech-description">Технокряк это современная площадка распространения коронавируса. 
                                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -285,28 +292,28 @@
                         <li class="footer-social-item">
                             <a class="footer-icon-link" href="#">
                                 <svg class="footer-social-icon">
-                                    <use href='./images/sprite.svg#icon-instagram'></use>
+                                    <use href='./img/sprite.svg#icon-instagram'></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-social-item">
                             <a class="footer-icon-link" href="#">
                                 <svg class="footer-social-icon">
-                                    <use href='./images/sprite.svg#icon-twitter'></use>
+                                    <use href='./img/sprite.svg#icon-twitter'></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-social-item">
                             <a class="footer-icon-link" href="#">
                                 <svg class="footer-social-icon">
-                                    <use href='./images/sprite.svg#icon-facebook'></use>
+                                    <use href='./img/sprite.svg#icon-facebook'></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-social-item">
                             <a class="footer-icon-link" href="#">
                                 <svg class="footer-social-icon">
-                                    <use href='./images/sprite.svg#icon-linkedin'></use>
+                                    <use href='./img/sprite.svg#icon-linkedin'></use>
                                 </svg>
                             </a>
                         </li>
@@ -322,7 +329,7 @@
                     </label>
                     <button type="submit" class="subscribe-btn">Подпишитесь
                         <svg class="icon-send" width='24' height='24'>
-                            <use href='./images/sprite.svg#icon-icon-send'></use>
+                            <use href='./img/sprite.svg#icon-icon-send'></use>
                         </svg>
                     </button>
                 </div>
